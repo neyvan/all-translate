@@ -26,6 +26,9 @@ jobs:
     - name: Install Qt
       uses: jurplel/install-qt-action@v2
     
+    - name: Qmake
+      run: qmake AllTranslate.pro
+    
     - name: make
       run: make
 
